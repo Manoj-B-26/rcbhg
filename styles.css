@@ -543,7 +543,7 @@ body.vi-active {
 #hero {
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   text-align: center;
   position: relative;
@@ -565,7 +565,7 @@ body.vi-active {
 .hero-content {
   position: relative;
   z-index: var(--z-content);
-  padding: 2rem;
+  padding: 1rem;
   max-width: 900px;
 }
 
@@ -1237,5 +1237,108 @@ body.vi-active {
     
     .president-image img {
         max-width: 100%; /* Allows image to fill its column dynamically */
+    }
+}
+
+
+/* ── TEAM REVEAL SYSTEM ── */
+.extra-member.hidden {
+    display: none;
+}
+
+.extra-member {
+    animation: fadeSlideUp 0.6s var(--ease-out-expo) forwards;
+}
+
+/* Stagger the animation so they pop in one by one like a wave */
+.extra-member:nth-child(5) { animation-delay: 0.1s; }
+.extra-member:nth-child(6) { animation-delay: 0.2s; }
+.extra-member:nth-child(7) { animation-delay: 0.3s; }
+.extra-member:nth-child(8) { animation-delay: 0.4s; }
+.extra-member:nth-child(9) { animation-delay: 0.5s; }
+.extra-member:nth-child(10) { animation-delay: 0.6s; }
+.extra-member:nth-child(11) { animation-delay: 0.7s; }
+
+@keyframes fadeSlideUp {
+    from { 
+        opacity: 0; 
+        transform: translateY(30px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+
+/* ── PREMIUM SOCIAL CONNECTIONS ── */
+.social-connect-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 1.5rem;
+}
+
+.social-label {
+    font-family: var(--font-heading);
+    font-size: var(--fs-small);
+    color: var(--gold-bright);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+}
+
+.social-links-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    color: var(--ivory);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s var(--ease-bounce);
+    box-shadow: var(--shadow-sm);
+}
+
+.social-btn i {
+    font-size: 1.25rem;
+}
+
+/* WhatsApp Hover Effect: Saffron Glow */
+.social-btn.whatsapp-btn:hover {
+    color: #25D366; /* Official WhatsApp Green */
+    border-color: var(--saffron);
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 0 20px rgba(255, 153, 51, 0.4);
+}
+
+/* Instagram Hover Effect: Gold Glow */
+.social-btn.instagram-btn:hover {
+    color: #E1306C; /* Official Instagram Pink-Red */
+    border-color: var(--gold);
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+}
+
+/* Make full-width on tiny mobile screens */
+@media (max-width: 480px) {
+    .social-links-row {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .social-btn {
+        width: 100%;
+        justify-content: center;
     }
 }
