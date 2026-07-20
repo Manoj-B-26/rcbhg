@@ -418,3 +418,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
   console.log('🇮🇳 Rotaract Club of HighGrounds — Indian Theme Active');
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Team Reveal Button Logic
+    const toggleBtn = document.getElementById('toggle-team-btn');
+    const hiddenMembers = document.querySelectorAll('.extra-member');
+    let isExpanded = false;
+
+    if(toggleBtn) {
+        toggleBtn.addEventListener('click', function() {
+            isExpanded = !isExpanded;
+            
+            hiddenMembers.forEach(member => {
+                if (isExpanded) {
+                    member.classList.remove('hidden');
+                } else {
+                    member.classList.add('hidden');
+                }
+            });
+
+            // Change button text based on state
+            toggleBtn.innerHTML = isExpanded 
+                ? 'Show Less <span style="margin-left: 5px;">⬆️</span>' 
+                : 'View Full Board <span style="margin-left: 5px;">⬇️</span>';
+        });
+    }
+});
