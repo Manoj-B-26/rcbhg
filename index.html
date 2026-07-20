@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+  <title>Rotaract Club of Bangalore High Grounds | Service • Fellowship • Leadership</title>
+  <meta name="description" content="Rotaract Club of Bangalore High Grounds — Young leaders driving community impact through service, fellowship, and leadership in Bangalore. RI District 3191.">
+  <meta name="author" content="Rotaract Club of Bangalore High Grounds">
+  <meta name="keywords" content="Rotaract, High Grounds, Bangalore, Community Service, Rotary, District 3191, Leadership, Fellowship, Youth">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0A0A2E">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       CLICK-TO-PLAY VIDEO INTRO OVERLAY (hero_video_2.mp4)
+       ══════════════════════════════════════ -->
+  <div id="video-intro" class="vi-overlay">
+    <!-- HTML5 Video element -->
+    <video id="intro-video" class="vi-video" muted playsinline preload="auto">
+      <source src="hero_video_2.mp4" type="video/mp4">
+    </video>
+
+    <!-- Clean Play Indicator Cue -->
+    <div class="vi-play-trigger">
+      <div class="vi-play-icon-wrap">
+        <div class="vi-play-icon"></div>
+      </div>
+      <div class="vi-play-text">Click to Play Intro</div>
+    </div>
+
+    <!-- Progress bar -->
+    <div class="vi-progress">
+      <div class="vi-progress-bar" id="vi-progress-bar"></div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       FLOATING PARTICLES (Diyas & Sparkles)
+       ══════════════════════════════════════ -->
+  <div id="particles-container"></div>
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION
+       ══════════════════════════════════════ -->
+  <nav id="main-nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <img src="assets/logo.jpg" alt="RCBHG Logo">
+        <div class="nav-logo-text">
+          High Grounds
+          <small>Rotaract Club of Bangalore</small>
+        </div>
+      </a>
+
+      <div class="nav-links">
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#president" class="nav-link" data-section="president">President's Message</a>
+        <a href="#focus-areas" class="nav-link" data-section="focus-areas">Focus Areas</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+        <a href="#team" class="nav-link" data-section="team">Team</a>
+        <a href="#events" class="nav-link" data-section="events">Events</a>
+        <a href="#contact" class="nav-cta" data-section="contact">Contact Us</a>
+      </div>
+
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Drawer -->
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="#about" class="nav-link" data-section="about">About</a>
+    <a href="#president" class="nav-link" data-section="president">President's Message</a>
+    <a href="#focus-areas" class="nav-link" data-section="focus-areas">Focus Areas</a>
+    <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+    <a href="#team" class="nav-link" data-section="team">Team</a>
+    <a href="#events" class="nav-link" data-section="events">Events</a>
+    <a href="#contact" class="nav-link" data-section="contact">Contact Us</a>
+  </div>
+  <div id="mobile-backdrop" class="mobile-backdrop"></div>
+
+  <!-- ══════════════════════════════════════
+       MAIN CONTENT
+       ══════════════════════════════════════ -->
+  <main id="main-content">
+
+    <!-- ── HERO SECTION ── -->
+    <section id="hero" class="section reveal-parent">
+      <div class="mandala-wrapper reveal-mandala" style="top: -100px; right: -100px;"><div class="mandala-decoration"></div></div>
+      <div class="mandala-wrapper reveal-mandala" style="bottom: -150px; left: -150px; width: 400px; height: 400px;"><div class="mandala-decoration" style="width: 100%; height: 100%;"></div></div>
+      
+      <div class="hero-content">
+        <div class="hero-badge reveal-child">
+          <span>🪔</span>
+          RI District 3191 • Rota Year 2026-27
+        </div>
+
+        <h1 class="hero-title reveal-child">
+          <span class="highlight">Rotaract Club of</span><br>
+          Bangalore <span class="highlight">High Grounds</span>
+        </h1>
+
+        <p class="hero-tagline font-display reveal-child">
+          Building Leaders • Creating Impact • Inspiring Change
+        </p>
+
+        <p class="hero-subtitle reveal-child">
+          We are a vibrant community of young leaders driven by service, leadership, and fellowship. 
+          Through meaningful projects, innovative ideas, and collaborative action, we strive to create lasting change in our communities.
+        </p>
+
+        <div class="hero-buttons reveal-child">
+          <a href="#contact" class="btn btn-primary" data-section="contact">
+            <span>🤝</span> Become a Member
+          </a>
+          <a href="#projects" class="btn btn-outline" data-section="projects">
+            <span>🏛️</span> Explore Our Journey
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── QUICK LINKS GRID ── -->
+    <section id="quick-links" class="reveal-parent">
+      <div class="quick-links-grid">
+        <div class="quick-link-card reveal-child" data-section="about">
+          <span class="quick-link-icon">🏛️</span>
+          <span class="quick-link-title">About Us</span>
+        </div>
+        <div class="quick-link-card reveal-child" data-section="president">
+          <span class="quick-link-icon">📜</span>
+          <span class="quick-link-title">President's Message</span>
+        </div>
+        <div class="quick-link-card reveal-child" data-section="team">
+          <span class="quick-link-icon">👥</span>
+          <span class="quick-link-title">Our Team</span>
+        </div>
+        <div class="quick-link-card reveal-child" data-section="projects">
+          <span class="quick-link-icon">📋</span>
+          <span class="quick-link-title">Projects</span>
+        </div>
+        <div class="quick-link-card reveal-child" data-section="events">
+          <span class="quick-link-icon">📅</span>
+          <span class="quick-link-title">Events</span>
+        </div>
+        <div class="quick-link-card reveal-child" data-section="contact">
+          <span class="quick-link-icon">📬</span>
+          <span class="quick-link-title">Contact</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ABOUT & CLUB INFORMATION ── -->
+    <section id="about" class="section reveal-parent">
+      <div class="mandala-wrapper reveal-mandala" style="top: -80px; right: -80px;"><div class="mandala-decoration"></div></div>
+      <div class="section-inner">
+        <div class="indian-divider reveal-divider reveal-child">
+          <span class="lotus">🪷</span>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-image-container reveal-child">
+            <img src="assets/logo.jpg" alt="Rotaract Club of Bangalore High Grounds Logo">
+          </div>
+          
+          <div class="about-text reveal-child">
+            <h2>About Our Club</h2>
+            <p>
+              Established in 2024, the <strong>Rotaract Club of Bangalore High Grounds</strong> is a community-based club sponsored by the <strong>Rotary Club of Bangalore High Grounds</strong> under <strong>Rotary International District 3191</strong>.
+            </p>
+            <p>
+              Since our charter, we have been committed to creating opportunities for young adults to develop leadership skills, serve communities, and build meaningful friendships through impactful service initiatives and professional development.
+            </p>
+
+            <div class="info-grid">
+              <div class="info-card">
+                <div class="info-card-label">📍 Location</div>
+                <div class="info-card-value">Bengaluru, KA</div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-label">🌏 District</div>
+                <div class="info-card-value">RI District 3191</div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-label">🏛 Chartered</div>
+                <div class="info-card-value">2024</div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-label">🆔 Club ID</div>
+                <div class="info-card-value">8826633</div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-label">🤝 Sponsored By</div>
+                <div class="info-card-value" style="font-size: 0.95rem;">RC Bangalore High Grounds</div>
+              </div>
+              <div class="info-card">
+                <div class="info-card-label">✅ Status</div>
+                <div class="info-card-value" style="color: var(--saffron);">Active</div>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn btn-primary" style="margin-top: 2rem;" data-section="contact">Join Us Today</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PRESIDENT'S MESSAGE ── -->
+    <section id="president" class="section reveal-parent">
+      <div class="mandala-wrapper reveal-mandala" style="bottom: -50px; left: -50px; width: 250px; height: 250px;"><div class="mandala-decoration"></div></div>
+      <div class="section-inner">
+        <h2 class="section-title reveal-child">A Message from the President</h2>
+        <div class="indian-divider reveal-divider reveal-child">
+          <span class="lotus">🪷</span>
+        </div>
+
+        <div class="reveal-child" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 2.5rem; max-width: 900px; margin: 0 auto; position: relative; z-index: 2;">
+          <p style="font-size: 1.15rem; color: var(--gold-bright); font-style: italic; margin-bottom: 1.5rem; line-height: 1.6;">
+            "Welcome to the Rotaract Club of Bangalore High Grounds. Our club is more than an organization—it is a family of passionate individuals united by a shared purpose to serve, lead, and inspire."
+          </p>
+          <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+            Every initiative we undertake reflects our commitment to creating meaningful impact while fostering leadership, innovation, and lifelong friendships.
+          </p>
+          <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+            As we continue our journey together, we invite every member, partner, and well-wisher to be part of this mission. Together, let us transform ideas into action, strengthen our communities, and create a legacy that inspires generations to come.
+          </p>
+
+          <div style="border-top: 1px solid var(--border-color); padding-top: 1rem;">
+            <h4 style="color: var(--ivory); font-size: 1.1rem;">Rtr. Nandan Kumar V S</h4>
+            <div style="color: var(--saffron); font-size: 0.9rem; font-weight: 600;">President • Rotaract Club of Bangalore High Grounds</div>
+            <div style="color: var(--text-muted); font-size: 0.8rem;">Rotary Year 2026–27</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FOCUS AREAS ── -->
+    <section id="focus-areas" class="section reveal-parent">
+      <div class="mandala-wrapper reveal-mandala" style="top: -100px; right: -50px; width: 250px; height: 250px;"><div class="mandala-decoration"></div></div>
+      <div class="section-inner">
+        <h2 class="section-title reveal-child">Areas of Focus</h2>
+        <p class="section-subtitle reveal-child">Rotary's Seven Areas of Focus guide our projects and initiatives.</p>
+        
+        <div class="indian-divider reveal-divider reveal-child">
+          <span class="lotus">🪷</span>
+        </div>
+
+        <div class="focus-grid">
+          <div class="focus-card reveal-child">
+            <span class="focus-icon">🏥</span>
+            <h3>Disease Prevention</h3>
+            <p>Health camps, awareness drives, and preventive care initiatives for underserved communities.</p>
+          </div>
+          <div class="focus-card reveal-child">
+            <span class="focus-icon">💧</span>
+            <h3>Water & Sanitation</h3>
+            <p>Clean water access, sanitation projects, and hygiene education in rural and urban areas.</p>
+          </div>
+          <div class="focus-card reveal-child">
+            <span class="focus-icon">👩‍🏫</span>
+            <h3>Basic Education</h3>
+            <p>Literacy programs, school supply drives, and mentorship for underprivileged students.</p>
+          </div>
+          <div class="focus-card reveal-child">
+            <span class="focus-icon">🤱</span>
+            <h3>Maternal & Child Health</h3>
+            <p>Supporting maternal care, nutrition programs, and child welfare initiatives.</p>
+          </div>
+          <div class="focus-card reveal-child">
+            <span class="focus-icon">☮️</span>
+            <h3>Peace & Conflict</h3>
+            <p>Building understanding, interfaith dialogues, and conflict resolution workshops.</p>
+          </div>
+          <div class="focus-card reveal-child">
+            <span class="focus-icon">💼</span>
+            <h3>Economic Development</h3>
+            <p>Skill development, entrepreneurship workshops, and livelihood support programs.</p>
+          </div>
+          <div class="focus-card reveal-child">
+            <span class="focus-icon">🌿</span>
+            <h3>Environment</h3>
+            <p>Tree planting drives, sustainability campaigns, and environmental awareness activities.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROJECTS SECTION ── -->
+    <section id="projects" class="section reveal-parent">
+      <div class="mandala-wrapper reveal-mandala" style="bottom: -100px; left: -50px; width: 300px; height: 300px;"><div class="mandala-decoration"></div></div>
+      <div class="section-inner">
+        <h2 class="section-title reveal-child">Creating Meaningful Impact</h2>
+        <p class="section-subtitle reveal-child">Every project we undertake is driven by compassion, collaboration, and purpose.</p>
+        
+        <div class="indian-divider reveal-divider reveal-child">
+          <span class="lotus">🪷</span>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal-child">
+            <div class="project-card-image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#1C1C55,#0A0A2E);display:flex;align-items:center;justify-content:center;color:var(--gold);">
+                <span>📚 Education Drive</span>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <h3>Vidya Daan — School Supply Distribution</h3>
+              <p>School supply distribution and mentorship program for underprivileged students across government schools in Bangalore.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal-child">
+            <div class="project-card-image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#1C1C55,#0A0A2E);display:flex;align-items:center;justify-content:center;color:var(--gold);">
+                <span>🏥 Health Camp</span>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <h3>Swasthya — Community Health Camp</h3>
+              <p>Free health checkup camp providing medical consultations, eye testing, and dental care to 200+ beneficiaries.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal-child">
+            <div class="project-card-image">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#1C1C55,#0A0A2E);display:flex;align-items:center;justify-content:center;color:var(--gold);">
+                <span>🌿 Green Drive</span>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <h3>Harithalaya — Tree Plantation Drive</h3>
+              <p>Tree planting initiative across Cubbon Park and surrounding areas, with 500+ saplings planted by our volunteers.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── STATS COUNTER ── -->
+    <section id="stats" class="section reveal-parent">
+      <div class="mandala-wrapper reveal-mandala" style="top: -50px; right: -50px; width: 250px; height: 250px;"><div class="mandala-decoration"></div></div>
+      <div class="section-inner">
+        <h2 class="section-title reveal-child">Our Impact at a Glance</h2>
+        <div class="indian-divider reveal-divider reveal-child">
+          <span class="lotus">🪷</span>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-item reveal-child">
+            <div class="stat-number" data-target="25" data-suffix="+">0</div>
+            <div class="stat-label">❤️ Community Projects</div>
+          </div>
+          <div class="stat-item reveal-child">
+            <div class="stat-number" data-target="50" data-suffix="+">0</div>
+            <div class="stat-label">👥 Active Members</div>
+          </div>
+          <div class="stat-item reveal-child">
+            <div class="stat-number" data-target="1200" data-suffix="+">0</div>
+            <div class="stat-label">🌱 Volunteer Hours</div>
+          </div>
+          <div class="stat-item reveal-child">
+            <div class="stat-number" data-target="15" data-suffix="+">0</div>
+            <div class="stat-label">🤝 Collaborative Projects</div>
+          </div>
+          <div class="stat-item reveal-child">
+            <div class="stat-number" data-target="8" data-suffix="+">0</div>
+            <div class="stat-label">🏆 Awards & Recognitions</div>
+          </div>
+          <div class="stat-item reveal-child">
+            <div class="stat-number" data-target="5000" data-suffix="+">0</div>
+            <div class="stat-label">🌍 Lives Impacted</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TEAM SECTION ── -->
+    <section id="team" class="section reveal-parent">
+      <div class="mandala-wrapper reveal-mandala" style="bottom: -50px; right: -50px; width: 280px; height: 280px;"><div class="mandala-decoration"></div></div>
+      <div class="section-inner">
+        <h2 class="section-title reveal-child">Meet Our Leadership</h2>
+        <p class="section-subtitle reveal-child">Dedicated individuals leading the club for Rotary Year 2026–27.</p>
+
+        <div class="indian-divider reveal-divider reveal-child">
+          <span class="lotus">🪷</span>
+        </div>
+
+        <div class="team-grid">
+          <div class="team-card reveal-child">
+            <div class="team-avatar">
+              <div style="width:100%;height:100%;background:#1C1C55;display:flex;align-items:center;justify-content:center;font-size:2rem;">👤</div>
+            </div>
+            <h3>Rtr. Nandan Kumar V S</h3>
+            <span class="role">President</span>
+          </div>
+
+          <div class="team-card reveal-child">
+            <div class="team-avatar">
+              <div style="width:100%;height:100%;background:#1C1C55;display:flex;align-items:center;justify-content:center;font-size:2rem;">👤</div>
+            </div>
+            <h3>Rtr. Immediate Past President</h3>
+            <span class="role">IPP</span>
+          </div>
+
+          <div class="team-card reveal-child">
+            <div class="team-avatar">
+              <div style="width:100%;height:100%;background:#1C1C55;display:flex;align-items:center;justify-content:center;font-size:2rem;">👤</div>
+            </div>
+            <h3>Rtr. Secretary</h3>
+            <span class="role">Secretary</span>
+          </div>
+
+          <div class="team-card reveal-child">
+            <div class="team-avatar">
+              <div style="width:100%;height:100%;background:#1C1C55;display:flex;align-items:center;justify-content:center;font-size:2rem;">👤</div>
+            </div>
+            <h3>Rtr. Treasurer</h3>
+            <span class="role">Treasurer</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EVENTS SECTION ── -->
+    <section id="events" class="section reveal-parent">
+      <div class="mandala-wrapper reveal-mandala" style="top: -100px; left: -100px; width: 300px; height: 300px;"><div class="mandala-decoration"></div></div>
+      <div class="section-inner">
+        <h2 class="section-title reveal-child">What's Next?</h2>
+        <p class="section-subtitle reveal-child">Explore our upcoming service projects and events.</p>
+
+        <div class="indian-divider reveal-divider reveal-child">
+          <span class="lotus">🪷</span>
+        </div>
+
+        <div class="events-timeline">
+          <div class="event-item reveal-child">
+            <div class="event-date">🗓️ August 2026</div>
+            <h3>20th Installation Ceremony</h3>
+            <p>Celebrating the installation of club leaders with a grand ceremony and community awards night.</p>
+          </div>
+
+          <div class="event-item reveal-child">
+            <div class="event-date">🗓️ September 2026</div>
+            <h3>Rotaract Week — Namma Bengaluru Drive</h3>
+            <p>Week-long celebration with community service projects, street cleanups, and outreach.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT SECTION ── -->
+    <section id="contact" class="section reveal-parent">
+      <div class="mandala-wrapper reveal-mandala" style="bottom: -80px; right: -80px; width: 250px; height: 250px;"><div class="mandala-decoration"></div></div>
+      <div class="section-inner">
+        <h2 class="section-title reveal-child">Become a HighGrounder</h2>
+        <p class="section-subtitle reveal-child">Leadership begins with taking the first step. Reach out to join us!</p>
+
+        <div class="indian-divider reveal-divider reveal-child">
+          <span class="lotus">🪷</span>
+        </div>
+
+        <div class="contact-grid">
+          <div class="reveal-child">
+            <h2>Let's Connect</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+              Whether you want to join our club, partner on a project, or simply learn more about what we do — drop us a message!
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+              <div>📍 Bengaluru, Karnataka, India</div>
+              <div>📧 rcbhighgrounds@gmail.com</div>
+              <div>📱 +91 98765 43210</div>
+              <div>🌐 RI District 3191 • Club ID: 8826633</div>
+            </div>
+          </div>
+
+          <div class="reveal-child">
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" required placeholder="Enter full name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required placeholder="your@email.com">
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" required placeholder="Tell us how you'd like to get involved..."></textarea>
+              </div>
+              <button type="submit" class="form-submit">Send Message ✨</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+       ══════════════════════════════════════ -->
+  <footer id="footer">
+    <div class="footer-grid">
+      <div>
+        <h4 style="color: var(--gold-bright); margin-bottom: 0.5rem;">Rotaract Club of Bangalore High Grounds</h4>
+        <p style="color: var(--text-muted); font-size: 0.85rem;">
+          Young leaders serving the community through fellowship and leadership. Part of Rotary International District 3191.
+        </p>
+      </div>
+
+      <div>
+        <h4 style="color: var(--gold); font-size: 0.85rem; text-transform: uppercase; margin-bottom: 0.75rem;">Quick Links</h4>
+        <a href="#about" style="display:block; color:var(--text-muted); margin-bottom: 0.25rem;">About</a>
+        <a href="#projects" style="display:block; color:var(--text-muted); margin-bottom: 0.25rem;">Projects</a>
+        <a href="#team" style="display:block; color:var(--text-muted); margin-bottom: 0.25rem;">Team</a>
+        <a href="#events" style="display:block; color:var(--text-muted);">Events</a>
+      </div>
+
+      <div>
+        <h4 style="color: var(--gold); font-size: 0.85rem; text-transform: uppercase; margin-bottom: 0.75rem;">Engagement</h4>
+        <a href="#contact" style="display:block; color:var(--text-muted); margin-bottom: 0.25rem;">Membership</a>
+        <a href="#contact" style="display:block; color:var(--text-muted); margin-bottom: 0.25rem;">Contact</a>
+        <a href="https://rotary.org" target="_blank" rel="noopener" style="display:block; color:var(--text-muted);">Rotary International</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Rotaract Club of Bangalore High Grounds. All rights reserved.</span>
+      <div class="tricolor-bar">
+        <span class="saffron"></span>
+        <span class="white"></span>
+        <span class="green"></span>
+      </div>
+      <span>Made with 🪔 in Bengaluru</span>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
