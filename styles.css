@@ -4,17 +4,10 @@
    ============================================================ */
 
 /* ── Google Fonts ── */
-@import url('https://fonts.googleapis.com/css2?family=Yatra+One&family=Outfit:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&family=Gravitas+One&family=Outfit:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-/* ── Nasyahama Font ── */
-@font-face {
-  font-family: 'Nasyahama';
-  src: url('assets/Nasyahama.woff2') format('woff2'),
-       url('assets/Nasyahama.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+
+
 
 /* ── CSS Custom Properties (Design Tokens) ── */
 :root {
@@ -65,7 +58,7 @@
   --border-glow: rgba(255, 153, 51, 0.4);
 
   /* Typography */
-  --font-display: 'Nasyahama', 'Yatra One', serif;
+  --font-display: 'Bebas Neue', 'Yatra One', serif;
   --font-heading: 'Outfit', sans-serif;
   --font-body: 'Poppins', sans-serif;
 
@@ -160,6 +153,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 /* ── Typography ── */
 .font-display { font-family: var(--font-display); }
 .font-heading { font-family: var(--font-heading); }
+
+/* Target only the H2 inside the navigation logo text */
+.nav-logo-text h2 {
+  color: var(--gold-bright); /* Replace with your desired color token or hex code */
+}
+
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
@@ -548,7 +547,7 @@ body.vi-active {
   justify-content: center;
   text-align: center;
   position: relative;
-  background: url('assets/hero_background.png') center/cover no-repeat;
+  background: url('assets/teamheaderbg.png') center/cover no-repeat;
   overflow: hidden;
 }
 
@@ -1181,4 +1180,62 @@ body.vi-active {
   .team-grid { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
   .team-card { padding: 1rem 0.5rem !important; }
   .team-avatar { width: 90px; height: 90px; margin-bottom: 0.5rem; }
+}
+
+
+/* ── PRESIDENT'S CARD RESPONSIVE LAYOUT ── */
+.president-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 2.5rem;
+    max-width: 1000px; /* Slightly wider to fit both text and image */
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    
+    /* Flexbox setup */
+    display: flex;
+    flex-direction: column; /* Mobile default: stack items vertically */
+    gap: 2rem;
+}
+
+/* Image container styling */
+.president-image {
+    order: -1; /* Forces the image to the top on mobile */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.president-image img {
+    max-width: 250px; /* Adjust size as needed */
+    height: auto;
+    border-radius: var(--radius-md);
+    border: 2px solid var(--gold);
+    box-shadow: var(--shadow-glow-gold); /* Uses your existing token */
+    object-fit: cover;
+}
+
+/* Desktop override */
+@media (min-width: 768px) {
+    .president-card {
+        flex-direction: row; /* Side by side */
+        align-items: stretch;
+    }
+    
+    .president-text {
+        flex: 1.5; /* Takes up slightly more space than the image */
+        order: 1; /* Text on the left */
+        padding-right: 1.5rem;
+    }
+    
+    .president-image {
+        flex: 1;
+        order: 2; /* Image on the right */
+    }
+    
+    .president-image img {
+        max-width: 100%; /* Allows image to fill its column dynamically */
+    }
 }
