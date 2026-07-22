@@ -593,7 +593,7 @@ body.vi-active {
   position: relative;
   background: url('assets/teamheaderbg.png') center 20% / cover no-repeat;
   overflow: hidden;
-  padding-top: 13rem;
+  /* padding-top: 13rem; */
 }
 
 #hero::before {
@@ -613,8 +613,8 @@ body.vi-active {
   z-index: var(--z-content);
   padding: 1rem;
   max-width: 900px;
-  margin-top: auto;
-  padding-bottom: 2rem;
+  /* margin-top: auto;
+  padding-bottom: 2rem; */
 }
 
 .hero-badge {
