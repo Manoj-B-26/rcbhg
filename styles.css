@@ -1693,3 +1693,88 @@ body.vi-active {
     justify-content: center;
   }
 }
+
+
+
+
+/* ══════════════════════════════════════
+   MEMBERSHIP PAGE STYLES
+   ══════════════════════════════════════ */
+
+/* Style for the member gallery grid */
+.member-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2.5rem;
+  margin-top: 4rem;
+}
+
+/* Individual member card styling */
+.member-card {
+  background-color: var(--navy-light);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.member-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Member photo container */
+.member-photo {
+  width: 100%;
+  height: 300px; /* Adjust height as needed */
+  overflow: hidden;
+}
+
+.member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image covers the area without distortion */
+  object-position: top; /* Prioritizes the top of the image */
+  transition: transform 0.3s ease;
+}
+
+.member-card:hover .member-photo img {
+  transform: scale(1.05);
+}
+
+/* Container for name and details */
+.member-details {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.member-details h3 {
+  color: var(--ivory);
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.member-details .member-role {
+  color: var(--gold);
+  font-size: 0.9rem;
+  margin: 0.25rem 0 0.75rem;
+  font-weight: 600;
+}
+
+.member-details .member-since {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  margin-top: auto; /* Pushes it to the bottom if card heights vary */
+}
+
+/* Make the active nav link stand out */
+.nav-link.active {
+  color: var(--gold-bright);
+  font-weight: 700;
+}

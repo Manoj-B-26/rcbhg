@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+  <!-- Updated Title and Description for Membership Page -->
+  <title>Membership | Rotaract Club of Bangalore High Grounds</title>
+  <meta name="description" content="Meet the members of Rotaract Club of Bangalore High Grounds and explore our membership statistics.">
+
+  <meta name="author" content="Rotaract Club of Bangalore High Grounds">
+  <meta name="keywords" content="Rotaract, Members, High Grounds, Bangalore, Community, RI District 3191">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0A0A2E">
+
+  <!-- Favicon and Fonts (Copied from index.html) -->
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- ══════════════════════════════════════
+       FLOATING PARTICLES
+       ══════════════════════════════════════ -->
+  <div id="particles-container"></div>
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION
+       ══════════════════════════════════════ -->
+  <nav id="main-nav">
+    <div class="nav-inner">
+      <!-- Logo now links back to the home page -->
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo.jpg" alt="RCBHG Logo">
+        <div class="nav-logo-text">
+          <small>Rotaract Club of Bangalore</small>
+          <h2>HIGH GROUNDS</h2>
+        </div>
+      </a>
+      <div class="nav-links">
+        <!-- Links updated to point back to index.html sections -->
+        <a href="index.html#about" class="nav-link">About</a>
+        <!-- Added active Membership link -->
+        <a href="membership.html" class="nav-link active">Membership</a>
+        <a href="index.html#projects" class="nav-link">Projects</a>
+        <a href="index.html#team" class="nav-link">Team</a>
+        <a href="index.html#events" class="nav-link">Events</a>
+        <a href="index.html#contact" class="nav-cta">Contact Us</a>
+      </div>
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Drawer -->
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="index.html#about" class="nav-link">About</a>
+    <a href="membership.html" class="nav-link active">Membership</a>
+    <a href="index.html#projects" class="nav-link">Projects</a>
+    <a href="index.html#team" class="nav-link">Team</a>
+    <a href="index.html#events" class="nav-link">Events</a>
+    <a href="index.html#contact" class="nav-link">Contact Us</a>
+  </div>
+  <div id="mobile-backdrop" class="mobile-backdrop"></div>
+
+  <!-- ══════════════════════════════════════
+       MAIN CONTENT
+       ══════════════════════════════════════ -->
+  <main id="main-content">
+
+    <!-- ── MEMBERSHIP HERO SECTION ── -->
+    <section id="membership-hero" class="section reveal-parent" style="padding-top: 100px; min-height: 40vh;">
+      <div class="section-inner">
+        <h1 class="hero-title reveal-child" style="font-size: 3.5rem;">
+          Our <span class="highlight">Members</span>
+        </h1>
+        <p class="hero-subtitle reveal-child" style="max-width: 600px; margin: 1rem auto 0;">
+          The heart of our club. Meet the passionate individuals who drive our mission forward.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── MEMBERSHIP STATS ── -->
+    <section id="membership-stats" class="section reveal-parent">
+      <div class="section-inner">
+        <h2 class="section-title reveal-child">Club Strength at a Glance</h2>
+        <div class="indian-divider reveal-divider reveal-child">
+          <span class="lotus">🪷</span>
+        </div>
+        <!-- Reusing the stats grid from your index page for consistency -->
+        <div class="stats-grid">
+          <div class="stat-item reveal-child">
+            <div class="stat-number" data-target="50" data-suffix="+">0</div>
+            <div class="stat-label">👥 Total Members</div>
+          </div>
+          <div class="stat-item reveal-child">
+            <div class="stat-number" data-target="48">0</div>
+            <div class="stat-label">✅ RI Registered Members</div>
+          </div>
+          <div class="stat-item reveal-child">
+            <div class="stat-number" data-target="95" data-suffix="%">0</div>
+            <div class="stat-label">📈 Membership Retention</div>
+          </div>
+          <div class="stat-item reveal-child">
+            <div class="stat-number" data-target="25" data-suffix="%">0</div>
+            <div class="stat-label">🌟 Membership Extension</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── MEMBER GALLERY ── -->
+    <section id="member-gallery" class="section reveal-parent">
+      <div class="section-inner">
+        <h2 class="section-title reveal-child">Meet the HighGrounders</h2>
+        <div class="indian-divider reveal-divider reveal-child">
+          <span class="lotus">🪷</span>
+        </div>
+        <div class="member-gallery-grid">
+          
+          <!-- === MEMBER CARD: Example 1 === -->
+          <!-- Replace with your actual member data -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/bod/Rtr. Nandan Kumar V S.png" alt="Photo of Rtr. Nandan Kumar">
+            </div>
+            <div class="member-details">
+              <h3>Rtr. Nandan Kumar V S</h3>
+              <p class="member-role">Club President</p>
+              <span class="member-since">Member Since 2024</span>
+            </div>
+          </div>
+
+          <!-- === MEMBER CARD: Example 2 === -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/bod/Rtr. Padma Charan R.png" alt="Photo of Rtr. Padma Charan R">
+            </div>
+            <div class="member-details">
+              <h3>Rtr. Padma Charan R</h3>
+              <p class="member-role">Club Secretary</p>
+              <span class="member-since">Member Since 2024</span>
+            </div>
+          </div>
+          
+          <!-- === MEMBER CARD: Example 3 === -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/bod/Rtr. Chethana MS.jpeg" alt="Photo of Rtr. Chethana MS">
+            </div>
+            <div class="member-details">
+              <h3>Rtr. Chethana MS</h3>
+              <p class="member-role">Joint Secretary</p>
+              <span class="member-since">Member Since 2024</span>
+            </div>
+          </div>
+
+          <!-- === ADD MORE MEMBER CARDS HERE === -->
+          <!-- Copy and paste the card structure above for each member -->
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+       ══════════════════════════════════════ -->
+  <footer id="footer">
+    <div class="footer-grid">
+      <div>
+        <h4 style="color: var(--gold-bright); margin-bottom: 0.5rem;">Rotaract Club of Bangalore High Grounds</h4>
+        <p style="color: var(--text-muted); font-size: 0.85rem;">
+          Young leaders serving the community through fellowship and leadership. Part of Rotary International District 3191.
+        </p>
+      </div>
+      <div>
+        <h4 style="color: var(--gold); font-size: 0.85rem; text-transform: uppercase; margin-bottom: 0.75rem;">Quick Links</h4>
+        <!-- Footer links updated to point to index.html -->
+        <a href="index.html#about" style="display:block; color:var(--text-muted); margin-bottom: 0.25rem;">About</a>
+        <a href="index.html#projects" style="display:block; color:var(--text-muted); margin-bottom: 0.25rem;">Projects</a>
+        <a href="index.html#team" style="display:block; color:var(--text-muted); margin-bottom: 0.25rem;">Team</a>
+        <a href="index.html#events" style="display:block; color:var(--text-muted);">Events</a>
+      </div>
+      <div>
+        <h4 style="color: var(--gold); font-size: 0.85rem; text-transform: uppercase; margin-bottom: 0.75rem;">Engagement</h4>
+        <a href="membership.html" style="display:block; color:var(--text-muted); margin-bottom: 0.25rem;">Membership</a>
+        <a href="index.html#contact" style="display:block; color:var(--text-muted); margin-bottom: 0.25rem;">Contact</a>
+        <a href="https.rotary.org" target="_blank" rel="noopener" style="display:block; color:var(--text-muted);">Rotary International</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Rotaract Club of Bangalore High Grounds. All rights reserved.</span>
+      <div class="tricolor-bar">
+        <span class="saffron"></span>
+        <span class="white"></span>
+        <span class="green"></span>
+      </div>
+      <span>Made with 🪔 in Bengaluru</span>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
