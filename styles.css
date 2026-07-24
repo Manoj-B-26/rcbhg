@@ -635,7 +635,7 @@ body.vi-active {
 .hero-title {
   font-family: var(--font-display);
   /* font-size: clamp(1.2rem, 3.8vw, 3.6rem); */
-  font-size: var(--fs-hero);
+  font-size: -webkit-xxx-large;
   line-height: 1.15;
   margin-bottom: var(--space-md);
 }
@@ -1037,47 +1037,85 @@ body.vi-active {
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  gap: 2.5rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  background: linear-gradient(#FFFFFF, #FFFCF7) padding-box,
+              var(--metallic-gold-gradient) border-box;
+  border: 2px solid transparent;
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: 0 8px 25px rgba(179, 135, 40, 0.12);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .form-group label {
   display: block;
-  font-size: var(--fs-small);
-  color: var(--gold-bright);
-  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #8B6508;
+  margin-bottom: 0.4rem;
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 0.9rem 1.2rem;
-  background: rgba(10, 10, 46, 0.8);
-  border: 1px solid var(--border-color);
+  box-sizing: border-box;
+  padding: 0.85rem 1rem;
+  background: #FAF6EE;
+  border: 1.5px solid #D4AF37;
   border-radius: var(--radius-sm);
-  color: var(--ivory);
+  color: #0A0A2E;
   font-family: inherit;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #718096;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: var(--saffron);
-  box-shadow: 0 0 15px rgba(255, 153, 51, 0.3);
+  border-color: #B38728;
+  background: #FFFFFF;
+  box-shadow: 0 0 10px rgba(179, 135, 40, 0.3);
 }
 
 .form-submit {
-  padding: 1rem 2rem;
-  background: linear-gradient(135deg, var(--saffron), var(--gold));
-  color: var(--navy);
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.9rem 1.5rem;
+  background: linear-gradient(135deg, #BF953F, #B38728, #AA771C);
+  color: #FFFFFF;
   font-weight: 700;
-  border-radius: var(--radius-xl);
+  border: none;
+  border-radius: var(--radius-md);
   font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(179, 135, 40, 0.3);
+  transition: all 0.3s ease;
+}
+
+.form-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(179, 135, 40, 0.45);
 }
 
 /* ── FOOTER ── */
@@ -1296,6 +1334,18 @@ body.vi-active {
   .section {
     padding: 2.25rem 1.25rem !important;
     /* Reduced vertical space between sections */
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+    width: 100% !important;
+  }
+
+  .contact-form {
+    padding: 1.25rem 1rem !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
   }
 
   .nav-links {
@@ -1606,16 +1656,19 @@ body.vi-active {
 /* Container for the image */
 .project-card-image {
   width: 100%;
-  height: 200px; /* Or whatever height you prefer for the cards */
+  height: 200px;
+  /* Or whatever height you prefer for the cards */
   overflow: hidden;
-  background-color: #1C1C55; /* A fallback background color is good practice */
+  background-color: #1C1C55;
+  /* A fallback background color is good practice */
 }
 
 /* The image itself */
 .project-card-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* This ensures the image covers the area without stretching */
+  object-fit: fill;
+  /* This ensures the image covers the area without stretching */
   display: block;
 }
 
@@ -1701,6 +1754,18 @@ body.vi-active {
    MEMBERSHIP PAGE STYLES
    ══════════════════════════════════════ */
 
+#membership-hero,
+#member-gallery {
+  padding-top: 7rem !important;
+}
+
+@media (max-width: 768px) {
+  #membership-hero,
+  #member-gallery {
+    padding-top: 5.5rem !important;
+  }
+}
+
 /* Style for the member gallery grid */
 .member-gallery-grid {
   display: grid;
@@ -1729,15 +1794,18 @@ body.vi-active {
 /* Member photo container */
 .member-photo {
   width: 100%;
-  height: 300px; /* Adjust height as needed */
+  height: 300px;
+  /* Adjust height as needed */
   overflow: hidden;
 }
 
 .member-photo img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures image covers the area without distortion */
-  object-position: top; /* Prioritizes the top of the image */
+  object-fit: cover;
+  /* Ensures image covers the area without distortion */
+  object-position: top;
+  /* Prioritizes the top of the image */
   transition: transform 0.3s ease;
 }
 
@@ -1755,9 +1823,15 @@ body.vi-active {
 }
 
 .member-details h3 {
-  color: var(--ivory);
-  font-size: 1.2rem;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
   margin: 0;
+  padding: 0.25rem 0;
+  background: linear-gradient(135deg, #BF953F, #B38728, #AA771C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .member-details .member-role {
@@ -1770,7 +1844,8 @@ body.vi-active {
 .member-details .member-since {
   color: var(--text-muted);
   font-size: 0.8rem;
-  margin-top: auto; /* Pushes it to the bottom if card heights vary */
+  margin-top: auto;
+  /* Pushes it to the bottom if card heights vary */
 }
 
 /* Make the active nav link stand out */
@@ -1780,15 +1855,18 @@ body.vi-active {
 }
 
 .member-details .member-ri-id {
-  color: var(--text-muted); /* Keeps it subtle */
+  color: var(--text-muted);
+  /* Keeps it subtle */
   font-size: 0.8rem;
-  margin-top: 0.25rem; /* Adds a tiny space below Member Since */
-  font-family: monospace; /* Optional: gives the ID number a clean, technical look */
+  margin-top: 0.25rem;
+  /* Adds a tiny space below Member Since */
+  font-family: monospace;
+  /* Optional: gives the ID number a clean, technical look */
 }
 
 /* Ensure the Member Since margin doesn't push the RI ID too far down */
 .member-details .member-since {
   color: var(--text-muted);
   font-size: 0.8rem;
-  margin-top: auto; 
+  margin-top: auto;
 }
